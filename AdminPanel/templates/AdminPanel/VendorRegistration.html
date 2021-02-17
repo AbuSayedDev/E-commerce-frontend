@@ -1,0 +1,79 @@
+{% extends 'AdminPanel/base.html'%} {% load static %} {% block content %}
+<div class="row mt-3">
+    <div class="col-lg-12">
+        <div class="card">
+            <div class="card-body">
+                <div class="card-title">Vendor Registration Form</div>
+                <hr>
+                <form>
+
+                    <div class="form-row py-1">
+                        <div class="col-lg-6">
+                            <label for="Brandname">Brand name <span>*</span></label>
+                            <input type="text" class="form-control" id="Brandname" placeholder="Enter Your Brand name">
+                        </div>
+                        <div class="col-lg-6">
+                            <label for="Ownername">Owner name <span>*</span></label>
+                            <input type="text" class="form-control" id="Ownername" placeholder="Enter Your Owner name">
+                        </div>
+                    </div>
+
+                    <div class="form-row py-1">
+                        <div class="col-lg-6">
+                            <label for="Phone">Phone <span>*</span></label>
+                            <input type="number" class="form-control" id="Phone" placeholder="Enter Your Mobile Number">
+                        </div>
+                        <div class="col-lg-6">
+                            <label for="MailAddress">Mail Address</label>
+                            <input type="email" class="form-control" id="MailAddress" placeholder="Enter Your Mail Address">
+                        </div>
+                    </div>
+
+
+                    <div class="form-row py-1">
+
+                        <label for="Location">Location<span>*</span></label>
+                        <input type="text" class="form-control" id="Location" placeholder="Enter Your Location">
+
+                    </div>
+
+                    <div class="form-row py-1">
+                        <div class="col-lg-6">
+                            <label for="Photo1">Valid Photo ID  <span>*</span></label>
+                            <input type="file" class="form-control-file" id="Photo1">
+                        </div>
+                        <div class="col-lg-6">
+                            <label for="Photo2">Photo <span>*</span></label>
+                            <input type="file" class="form-control-file" id="Photo2">
+                        </div>
+                    </div>
+
+
+                    <div class="form-row py-1">
+                        <div class="col-lg-6">
+                            <label for="Bin">Bin <span>*</span></label>
+                            <input type="text" class="form-control" id="Bin" placeholder="Enter Your Bin">
+                        </div>
+                        <div class="col-lg-6">
+                            <label for="Tin">Tin</label>
+                            <input type="text" class="form-control" id="Tin" placeholder="Enter Your Tin">
+                        </div>
+                    </div>
+
+
+                    <div class="form-row py-1">
+                        <label for="Additionalinformation">Additional information</label>
+                        <input type="text" class="form-control" id="Additionalinformation" placeholder="Enter Your Additional information">
+                    </div>
+
+
+                    <div class="form-group py-4">
+                        <button type="submit" class="btn btn-light px-5"><i class="icon-lock"></i> Register</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
